@@ -1,0 +1,6 @@
+FROM php:7.4-fpm
+WORKDIR /var/www
+EXPOSE 8000
+CMD pause
+CMD sleep 5s
+CMD php -S 0.0.0.0:8000 -t /var/www/backend
